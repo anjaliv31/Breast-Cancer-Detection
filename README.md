@@ -117,10 +117,10 @@ http://localhost:8501
 ## 📸 Application Screenshot
 
 ### Dashboard
-![Dashboard](results/dashboard.png)
+![Dashboard](results/Dashboard.png)
 
 ### Prediction Result
-![Prediction Result](results/result.png)
+![Prediction Result](results/Result.png)
 
 ---
 
