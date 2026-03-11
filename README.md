@@ -116,7 +116,11 @@ http://localhost:8501
 
 ## 📸 Application Screenshot
 
-(Add your screenshot here after running the app)
+### Dashboard
+![Dashboard](results/dashboard.png)
+
+### Prediction Result
+![Prediction Result](results/result.png)
 
 ---
 
