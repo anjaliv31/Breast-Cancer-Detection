@@ -76,6 +76,7 @@ The trained model is deployed as an interactive dashboard using **Streamlit**.
 
 ## 📁 Project Structure
 
+```
 Breast-Cancer-Detection
 │
 ├── app.py
@@ -93,7 +94,7 @@ Breast-Cancer-Detection
 │
 └── results
     └── app_screenshot.png
-
+```
 ---
 
 ## ⚙️ Installation
