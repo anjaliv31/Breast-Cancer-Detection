@@ -1,65 +1,81 @@
 # 🧬 AI Breast Cancer Detection System
 
-## 📌 Overview
+## 🚀 Overview
+This project is an end-to-end Machine Learning system designed to classify tumors as **benign or malignant** using medical diagnostic data.
 
-This project is a **Machine Learning-based Breast Cancer Detection System** that predicts whether a tumor is **benign or malignant** based on tumor characteristics.
-
-The model is trained using the **Breast Cancer Wisconsin Dataset** and deployed as an interactive web application using Streamlit. Users can adjust tumor features through sliders and receive a **real-time prediction** along with confidence scores.
+The system focuses on **model comparison, performance evaluation, and real-time deployment** through an interactive web application built with Streamlit.
 
 ---
 
 ## 📊 Dataset
+The model is trained on the **Breast Cancer Wisconsin Dataset**, which contains features computed from digitized images of fine needle aspirates of breast masses.
 
-This project uses the **Breast Cancer Wisconsin Dataset**, which contains medical measurements of tumor cell nuclei.
+### Features include:
+- Mean radius  
+- Mean texture  
+- Mean perimeter  
+- Mean area  
+- Smoothness  
+- Compactness  
+- Concavity  
+- Symmetry  
+- Fractal dimension  
 
-Features include:
+**Total features:** 30  
 
-* Mean radius
-* Mean texture
-* Mean perimeter
-* Mean area
-* Smoothness
-* Compactness
-* Concavity
-* Symmetry
-* Fractal dimension
-
-Total features used: **30**
-
-Target classes:
-
-* **Benign (Non-Cancerous)**
-* **Malignant (Cancerous)**
+### Target Classes:
+- **Benign (Non-Cancerous)**  
+- **Malignant (Cancerous)**  
 
 ---
 
-## 🤖 Machine Learning Models Used
+## 🤖 Models Implemented & Results
 
-The following machine learning models were implemented and compared:
+The following machine learning models were trained and evaluated:
 
-* Logistic Regression
-* K-Nearest Neighbors (KNN)
-* Decision Tree
-* Random Forest
-* Support Vector Machine (SVM)
+- Logistic Regression — **97.37%**
+- K-Nearest Neighbors (KNN) — **94.73%**
+- Decision Tree — **92.10%**
+- Random Forest — **96.49%**
+- Support Vector Machine (SVM) — **98.25%** ⭐
 
-After evaluation, **Random Forest** provided the best performance and was selected as the final model.
+👉 **SVM achieved the highest accuracy and was selected as the final model.**
+
+---
+
+## 📈 Model Performance
+
+- **Best Model:** Support Vector Machine (SVM)  
+- **Accuracy:** **98.25%**
+
+The model was evaluated on unseen test data to ensure strong generalization and reliability.
 
 ---
 
 ## 🖥️ Web Application
 
-The trained model is deployed as an interactive dashboard using Streamlit where users can:
+The trained model is deployed as an interactive dashboard using **Streamlit**.
 
-* Adjust tumor characteristics using sliders
-* Run predictions instantly
-* View prediction confidence
+### Features:
+- Adjustable tumor characteristics using sliders  
+- Real-time prediction (Benign / Malignant)  
+- Confidence score display  
+- Fast and user-friendly interface  
+
+---
+
+## 🏗️ System Design
+
+- Data preprocessing and feature scaling  
+- Model training and evaluation pipeline  
+- Model serialization using `.pkl`  
+- Prediction logic implemented in `predict.py`  
+- Interactive frontend using Streamlit  
 
 ---
 
 ## 📁 Project Structure
 
-```
 Breast-Cancer-Detection
 │
 ├── app.py
@@ -77,7 +93,6 @@ Breast-Cancer-Detection
 │
 └── results
     └── app_screenshot.png
-```
 
 ---
 
@@ -85,74 +100,65 @@ Breast-Cancer-Detection
 
 Clone the repository:
 
-```
-git clone https://github.com/yourusername/breast-cancer-detection.git
-cd breast-cancer-detection
-```
+git clone https://github.com/yourusername/breast-cancer-detection.git  
+cd breast-cancer-detection  
 
-Install required libraries:
+Install dependencies:
 
-```
-pip install -r requirements.txt
-```
+pip install -r requirements.txt  
 
 ---
 
 ## ▶️ Run the Application
 
-Start the Streamlit application:
+streamlit run app.py  
 
-```
-streamlit run app.py
-```
-
-Then open in your browser:
-
-```
-http://localhost:8501
-```
+Open in browser:  
+http://localhost:8501  
 
 ---
 
-## 📸 Application Screenshot
+## 📸 Application Preview
 
-### Dashboard
-![Dashboard](results/Dashboard.png)
-
-### Prediction Result
-![Prediction Result](results/Result.png)
-
----
-
-## 🚀 Features
-
-* End-to-end machine learning pipeline
-* Multiple model comparison
-* Random Forest model deployment
-* Interactive AI dashboard
-* Real-time tumor classification
+- Interactive dashboard for tumor input  
+- Real-time prediction with confidence score  
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Python
-* Scikit-learn
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Streamlit
+- Python  
+- Scikit-learn  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Streamlit  
 
 ---
 
-## 🎯 Future Improvements
+## 🎯 Key Highlights
 
-* Add model explainability (SHAP / feature importance visualization)
-* Improve UI with advanced dashboards
-* Deploy application publicly for live access
-* Integrate larger medical datasets
+- End-to-end ML pipeline with deployment  
+- Comparison of multiple ML algorithms  
+- High accuracy classification model (**98.25%**)  
+- Real-time prediction system  
 
 ---
 
+## 🚀 Future Improvements
 
+- Add model explainability (SHAP / feature importance)  
+- Deploy application online (Streamlit Cloud / AWS)  
+- Integrate larger real-world medical datasets  
+- Convert into REST API using FastAPI  
+
+---
+
+## 💡 Conclusion
+
+This project demonstrates the ability to:
+- Build and evaluate machine learning models  
+- Select optimal models based on performance  
+- Deploy ML solutions into interactive applications  
+- Translate data science concepts into practical systems  
